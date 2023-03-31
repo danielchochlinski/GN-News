@@ -1,0 +1,10 @@
+@import "../../../veriables";
+.container {
+  max-width: 70px;
+  min-width: 70px;
+
+  border: 1px solid $blue_article_outline;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: scroll;
+}

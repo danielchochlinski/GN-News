@@ -1,0 +1,9 @@
+@import "../../veriables";
+.container {
+  // bgcolor: background.paper,
+  border: 1px solid $blue_article_outline;
+  background-color: $article_background;
+  background-color: black;
+  padding: 10px;
+  border-radius: 15px;
+}

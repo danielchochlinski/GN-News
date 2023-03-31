@@ -1,0 +1,9 @@
+.container_list {
+  overflow: scroll;
+}
+.container_grid {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  justify-content: space-evenly;
+}
