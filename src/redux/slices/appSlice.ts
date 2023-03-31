@@ -6,6 +6,7 @@ const initialState = {
   loading: false,
   newsLenght: 0,
   newsOutlet: "bbc",
+  navigation: false,
 };
 
 export const appSlice = createSlice({
@@ -33,6 +34,9 @@ export const appSlice = createSlice({
     setNewsOutlet: (state, action: PayloadAction<string>) => {
       state.newsOutlet = action.payload;
     },
+    toggleNavigation: (state, action: PayloadAction<boolean>) => {
+      state.navigation = action.payload;
+    },
   },
 });
 export const {
@@ -43,6 +47,7 @@ export const {
   setLoadingFalse,
   setNewsLenght,
   setNewsOutlet,
+  toggleNavigation,
 } = appSlice.actions;
 
 export default appSlice.reducer;

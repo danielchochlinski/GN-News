@@ -7,3 +7,14 @@
   overflow: scroll;
   justify-content: space-evenly;
 }
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  svg {
+    width: 280px !important;
+    height: 280px !important;
+  }
+}

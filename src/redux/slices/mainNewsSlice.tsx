@@ -25,3 +25,4 @@
 //   reducers: {},
 //   extraReducers: (builder) => {},
 // });
+export const test = {};

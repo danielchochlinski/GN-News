@@ -4,8 +4,10 @@ import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { toggleArticleModal } from "../../redux/slices/appSlice";
 import ModalComponent from "../Modals/ModalComponent";
 import ArticleModal from "./ArticleModal";
+import { Dna } from "react-loader-spinner";
+import { ArticleInterface } from "./types";
 interface IArticle {
-  article: any;
+  article: ArticleInterface;
 }
 const Article = ({ article }: IArticle) => {
   const dispatch = useAppDispatch();
@@ -17,9 +19,10 @@ const Article = ({ article }: IArticle) => {
     (state) => state.appState.articleModal
   );
   const articleImg = urlToImage === null ? "/breaking_news.jpeg" : urlToImage;
+  console.log(article);
   return (
     <>
-      <div className={view ? styles.container_list : styles.container_gird}>
+      <div className={view ? styles.container_list : styles.container_gird} >
         <div className={styles.image_container}>
           <img src={articleImg} alt="article_image" />
         </div>
